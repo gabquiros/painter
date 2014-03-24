@@ -1,0 +1,398 @@
+/*
+** Genreal Styles
+*/
+
+html,body,div,h1,h2,h3,ul,li,p,button{
+padding:0;margin:0;
+}
+
+body{
+	background:url('../img/fondo3-1.png') repeat-x;
+	width: 100%;
+	height: 790px;
+}
+
+button:active,button:focus {
+    outline: none;
+}
+
+/*
+** Main Styles
+*/
+
+.main-content {
+    width:1000px;
+    margin: 0 auto;
+    cursor: url(./blank.cur), none;
+    /*cursor: pointer;*/
+}
+
+.main-elements-container {
+    position: relative;
+    height:700px;
+}
+
+
+/*
+** Canvas
+*/
+
+#canvasDiv {
+    display: inline-block;
+    margin: 66px 0 0 155px;
+    width: 434px;
+    -webkit-transform: rotate(0.5deg);
+    -webkit-transform-origin: top left;
+}
+
+#canvasDiv > canvas {
+    cursor: pointer;
+    background: #ffffff;
+}
+
+/*
+** Navigation
+*/
+.icons {
+    display: inline-block;
+    margin-left: 70px;
+    margin-bottom: -70px;
+    position: relative;
+    top: -70px;
+}
+.icons > button {
+    display: block;
+    width: 110px;
+    height: 110px;
+}
+
+.save {
+
+    background : url(../img/sprite-icons.png) no-repeat;
+    border: none;
+}
+
+.save {
+    background-position: -15px 0px;
+
+} 
+
+.save:hover {
+    background : url(../img/sprite-hover-icons.png) no-repeat;
+    background-position: -15px 0px; 
+}
+.load {
+    background : url(../img/sprite-icons.png) no-repeat;
+    border: none;
+    background-position: -15px -100px;
+}
+
+.load:hover {
+    background : url(../img/sprite-hover-icons.png) no-repeat;
+    background-position: -15px -100px;  
+}
+
+.new {
+    background : url(../img/sprite-icons.png) no-repeat;
+    border: none;
+}
+
+.new {
+    background-position: -15px -216px;
+
+} 
+
+.new:hover {
+    background : url(../img/sprite-hover-icons.png) no-repeat;
+    background-position: -15px -216px;
+}
+
+.download {
+    background : url(../img/sprite-icons.png) no-repeat;
+    border: none;
+    background-position: -15px -337px;
+    display: block;
+    width: 81px;
+    height: 80px;
+}
+
+.download:hover {
+    background : url(../img/sprite-hover-icons.png) no-repeat;
+    background-position: -15px -337px;
+}
+
+/*
+** Lienzo
+*/
+
+.lienzo {
+	height: 700px;
+    background: url('../img/lienzo.png') no-repeat;
+    position: absolute;
+    top: 0;
+    display: inline-block;
+    width: 1000px;
+    z-index: -2;
+}
+
+/*
+** Paints
+*/
+
+.paints-container{
+    display: inline-block;
+	width:381px;
+	height:212px;
+	background:url('../img/pinturas.png') no-repeat 0 -24px;
+    position: relative;	
+}
+
+.paints {
+    position: absolute;
+    width: 41px;
+    height: 41px;
+    background : url(../img/sprite-colors.png) no-repeat;
+    border: none;
+}
+
+.paints-red {
+
+    background-position : -264px 0px;
+    left: 180px;
+    top: 5px;
+}
+
+.paints-red:hover {
+    background-position : -264px -41px; 
+}
+
+.paints-yellow {
+    background-position : -232px 0px;
+    left: 230px;
+    top: 22px;
+}
+
+.paints-yellow:hover {
+    background-position : -232px -41px; 
+}
+
+.paints-green {
+    background-position : -189px 0px;
+    left: 260px;
+    top: 55px;
+}
+
+.paints-green:hover {
+    background-position : -189px -41px; 
+}
+
+.paints-blue {
+    background-position : -148px 0px;
+    left: 263px;
+    top: 99px;
+} 
+
+.paints-blue:hover {
+    background-position : -148px -41px; 
+}
+
+.paints-white {
+    background-position: -103px 0px;
+    left: 223px;
+    top: 131px;
+}
+
+.paints-white:hover {
+    background-position : -103px -41px; 
+}
+
+.paints-black {
+    background-position: -58px 0px;
+    left: 178px;
+    top: 145px;
+}
+
+.paints-black:hover {
+    background-position : -58px -41px; 
+}
+
+.paints-brown {
+    background-position: -15px 0px;
+    left: 126px;
+    top: 134px;
+}
+
+.paints-brown:hover {
+    background-position : -15px -41px;   
+}
+
+/*
+** Tools
+*/
+
+.brush-container{
+    display: inline-block;
+    margin-left: 156px;
+    position: relative;
+    top: -60px;
+}
+
+.brush-container > button {
+    display: block;
+    border: none;
+}
+
+.brush {
+    -webkit-transform: rotate(-15deg);
+    margin-bottom: 10px
+
+}
+
+#large{
+    cursor:none;
+	width:334px;
+	height:22px;
+	background:url('../img/large.png') no-repeat;
+    background-position: -18px -8px;
+    z-index: 10000;
+}
+
+/*#large:hover{
+	background:url('../img/large-hover.png') no-repeat;
+    background-position: -18px -8px;
+}
+*/
+
+#medium{
+	width:334px;
+	height:17px;
+	background:url('../img/medium.png') no-repeat;
+    background-position: -27px -11px;
+    position: relative;
+}
+
+/*#medium:hover{
+	background:url('../img/medium-hover.png') no-repeat;
+    background-position: -27px 0;
+}*/
+
+#small{
+	width:334px;
+	height:16px;
+	background:url('../img/small.png') no-repeat;
+    background-position: -18px -14px;
+    position: relative;
+
+}
+
+/*#small:hover{
+	background:url('../img/small-hover.png') no-repeat;
+    background-position: -18px 0;
+}*/
+
+.eraser{
+
+	width:192px;
+	height:103px;
+    background:url('../img/eraser.png') no-repeat;
+    position: absolute;
+    left: 1000px;
+    top: 600px;
+    border: none;
+}
+
+.no-select {
+
+    -webkit-user-select: none;
+}
+
+
+
+
+/*
+.eraser:hover{
+	background:url('../img/eraser-hover.png') no-repeat;
+}*/
+
+/*
+** helper styles
+*/
+
+/**
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    contenteditable attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that are clearfixed.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ *
+.cf:before,
+.cf:after {
+    content: " "; /* 1 *
+    display: table; /* 2 *
+}
+
+.cf:after {
+    clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ 
+.cf {
+    *zoom: 1;
+}
+*/
+
+
+
+#eraserLink , #deselectEraserLink
+{
+  display:block;
+  text-decoration:none;
+  font-size:50%;
+  height:50px;
+}
+
+#eraserLink  .Unselected, #deselectEraserLink 
+{
+  width:40%;
+  float:left;
+}
+
+#eraserLink .Selected
+{
+  border:5px solid #333;
+  width:60%;
+  float:left;
+}
+
+ol
+{
+  list-style-position:inside;
+}
+
+ol li
+{
+  font-size:60%; 
+  border:1px inset #DDD;
+  padding:5px;
+}
+
+ul
+{
+  list-style-type:none;
+}
+
+.alt
+{
+  background-color:#DDD;
+}
+
+.ClearFloats
+{
+  clear:both;
+}
+
